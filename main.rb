@@ -33,11 +33,11 @@ if type_of_calculator == 'b'
   puts "Now please enter the second number you want to compute"
   second_number = gets.chomp.to_f
   if operator == '+'
-    puts "#{first_number} + #{second_number} is #{add(first_number, second_number)}
+    puts "#{first_number} + #{second_number} is #{add(first_number, second_number)}"
   elsif operator == '-'
     puts "#{first_number} - #{second_number} is #{subtract(first_number,second_number)}"
   elsif operator == '/'
-    puts "#{first_number} / #{second_number} is #{divide(first_number,second_number)}"
+    puts "#{first_number} / #{second_number} is #{divide(first_number,second_number).round(2)}"
   elsif operator == '*'
     puts "first_number * second_number is #{multiply(first_number,second_number)}"
   end
