@@ -51,7 +51,7 @@ if type_of_calculator == 'a'
   puts "please enter the second number you want to operate on"
   second_number = gets.chomp.to_f
   if operator == "rt"
-    puts "The root of #{first_number} is #{root(first_number)}"
+    puts "The root of #{first_number} is #{root(first_number).round(2)}"
   elsif operator == "p"
     puts "#{first_number} to the power of #{second_number} is #{power(first_number, second_number)}"
   end
@@ -68,14 +68,14 @@ if type_of_calculator == 'm'
     puts "Now please enter how many inches extra you are"
     inches = gets.chomp.to_f
     result = (weight*703)/(((feet*12)+inches)**2)
-    puts "your bmi is #{result}"
+    puts "your bmi is #{result.round(2)}"
   elsif type_of_system == 'metric'
     puts "Please enter your weight in kg"
     weight = gets.chomp.to_f
     puts "Please enter your height in cm"
     height = gets.chomp.to_f
     result = weight/((height/100)**2)
-    puts "Your bmi is #{result}"
+    puts "Your bmi is #{result.round(2)}"
   end
 end
 
@@ -96,5 +96,5 @@ if type_of_calculator == 't'
   end
   travel_time = distance/speed
   travel_cost = (distance/mpg) *cpg
-  puts "Your trip will take #{travel_time} hours and cost £#{travel_cost}"
+  puts "Your trip will take #{travel_time.round(2)} hours and cost £#{travel_cost.round(2)}"
 end
