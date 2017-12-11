@@ -1,9 +1,8 @@
 # sparta-ruby-calculator
 
-## Good things
 
-Used functions for calculations, not for BMI or travel though
+Simple calculator that does addition, multiplication, subtraction and division.
 
-## Difficulties
+You also have the option to calculate your BMI in the imperial or metric system.
 
-Finding the sqrt method was more difficult than it should have been
+You can also do some basic travel cost and fuel calculations
